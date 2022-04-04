@@ -1,0 +1,132 @@
+
+*{
+  padding: 0;
+}
+
+
+#dialog{
+
+  background-color:rgb(13,17,23);
+  font-family: sans-serif;
+  display:flex;
+  margin:0;
+  padding:10px;
+  border:none;
+ 
+}
+
+.profile{
+  width: 500px;
+}
+
+.avatar{
+  border-radius: 50%;
+  border:1px solid rgb(2, 2, 5);
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.usuario{
+  text-decoration: none;
+  color: gray;
+  font-family:sans-serif;
+  font-size: 15px;
+}
+.username{
+  color:gray;
+  font-family:sans-serif;
+  font-size: small;
+}
+
+.grade{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.repositorios{
+  display:flex;
+  flex-direction: column;
+  border: 0.1px solid rgb(61, 61, 61);
+  border-radius: 3%;
+  color:gray;
+  font-family: 'Quicksand, sans-serif';
+  width:260px; 
+  height: 120px;
+  text-align:left;
+ justify-items: center;
+  margin: 10px;
+  padding: 5px;
+  font-family:sans-serif;
+  font-size: small;
+  
+}
+
+.bio{
+  color:gray;
+  font-family:sans-serif;
+  font-size: x-small;
+}
+
+.follow{
+  color:gray;
+  font-family:sans-serif;
+  font-size: x-small;
+}
+
+.local{
+  color:gray;
+  font-family:sans-serif;
+  font-size: x-small;
+}
+h2{
+
+  color:gray;
+  font-family:sans-serif;
+
+}
+
+.reph2{
+  text-align: center;
+  border-bottom: 0.5px solid rgb(61, 61, 61);
+}
+
+#nomerep{
+  font-size: 0.9rem;
+  margin: 3px;
+  color:rgb(73,133,189);
+}
+
+#descrip{
+  margin: 2px;
+  padding: 3px;
+  height: 90px;
+  font-size: 0.6rem;
+    overflow:hidden;
+    text-overflow:'...' ellipsis;
+  direction: ltr;
+font-family: sans-serif;
+color:gray;
+}
+
+mat-icon{
+ font-size: 0.6rem;
+ 
+}
+
+.icons{
+  height:15px;
+margin: 0;
+padding-top: 10px;
+bottom:0;
+font-size: 0.5rem;
+}
+
+
+.repositorios:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 35px rgb(5, 6, 8);
+ 
+}
+

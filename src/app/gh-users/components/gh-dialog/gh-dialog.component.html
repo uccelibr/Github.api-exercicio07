@@ -1,0 +1,46 @@
+<div mat-dialog-content id="dialog">
+  <mat-progress-spinner color="primary" mode="indeterminate" *ngIf="user==null; else content">
+  </mat-progress-spinner>
+  <div class="profile">
+    <ng-template #content>
+      <div>
+        <img class="avatar" src="{{user?.avatar_url}}" alt="Foto avatar usuario">
+
+        <a class="usuario" [href]="user?.html_url" target="_blank">
+          <h2>{{user?.name}}</h2>
+        </a>
+
+        <div class="username">
+          <mat-icon>account_circle</mat-icon>
+          {{user?.login}}
+        </div>
+
+        <p class="bio">{{user?.bio}}</p>
+        <div class="follow">
+          <mat-icon>supervisor_account </mat-icon>
+          {{user?.followers}} followers -
+          {{user?.following}} following
+        </div>
+        <div class="local">
+          {{user?.location}}
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="col">
+    <h2 class="reph2">Repositórios</h2>
+   
+    <div class="grade">
+      
+      <div mat-card class="repositorios" *ngFor="let itens of rep">
+        <a mat-card-title id="nomerep" [href]="itens?.html_url" target="_blank">  {{itens?.name}}</a>
+
+        <p mat-card-content  title={{itens?.description}} id="descrip">{{itens?.description}}</p>
+     
+        <p class="icons"> <mat-icon> radio_button_unchecked </mat-icon> {{itens?.language}} - <mat-icon>star_border  </mat-icon> {{itens?.stargazers_count}} </p>
+      </div>>
+    </div>
+  </div>
+
+</div>
+
